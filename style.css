@@ -225,6 +225,7 @@ video {
   border-radius: 12px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
+
 @media (max-width: 768px) {
   .navbar {
     flex-direction: column;
@@ -257,4 +258,4 @@ video {
     text-align: center;
     padding: 1rem;
   }
-} 
+}
