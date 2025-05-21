@@ -30,8 +30,7 @@
       box-sizing: border-box;
     }
 
-    html,
-    body {
+    html, body {
       height: 100%;
     }
 
@@ -42,7 +41,15 @@
       min-height: 100vh;
     }
 
-
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background-color: #343a40;
+      color: white;
+      padding: 10px 20px;
+      position: relative;
+    }
 
     nav a {
       color: white;
@@ -60,7 +67,6 @@
     .offcanvas {
       background-color: #f8f9fa;
     }
-
     .hero-title {
       font-size: 1.6rem;
     }
@@ -86,20 +92,8 @@
         display: none;
       }
 
-      header {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        color: white;
-        padding: 10px 20px;
-        position: relative;
-      }
-
       nav {
         display: flex;
-      }
-      .logo {
-        height: 50px;
       }
     }
   </style>
@@ -115,8 +109,7 @@
     <h1 class="titolo">Privacy & Sicurezza</h1>
 
     <!-- Bottone hamburger a destra -->
-    <button class="mobile-nav-toggle" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileMenu"
-      aria-controls="mobileMenu">
+    <button class="mobile-nav-toggle" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileMenu" aria-controls="mobileMenu">
       &#9776;
     </button>
   </header>
@@ -158,8 +151,7 @@
           propri dati personali.<br><br>
           Attraverso una serie di video brevi e chiari, abbiamo voluto spiegare in modo semplice ma efficace come
           proteggersi online, riconoscere i rischi più comuni e adottare comportamenti sicuri sul web.<br>
-          Il progetto nasce con l’obiettivo di aumentare la consapevolezza digitale tra i giovani e promuovere una
-          cultura
+          Il progetto nasce con l’obiettivo di aumentare la consapevolezza digitale tra i giovani e promuovere una cultura
           del rispetto e della responsabilità anche in rete.
         </span>
       </p>
@@ -167,8 +159,7 @@
   </main>
 
   <footer>
-    <span style="color:#ffe082;font-weight:600;">Progetto di Educazione Civica</span> — Realizzato da Manuel &
-    Mattia<br>
+    <span style="color:#ffe082;font-weight:600;">Progetto di Educazione Civica</span> — Realizzato da Manuel & Mattia<br>
     &copy; 2025 Tutti i diritti riservati
   </footer>
 
