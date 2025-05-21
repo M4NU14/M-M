@@ -24,12 +24,35 @@
   </script>
 
   <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html, body {
+      height: 100%;
+    }
 
     body {
       font-family: Arial, sans-serif;
       display: flex;
       flex-direction: column;
       min-height: 100vh;
+    }
+
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background-color: #343a40;
+      color: white;
+      padding: 10px 20px;
+      position: relative;
+    }
+
+    .logo {
+      height: 50px;
     }
 
     .mobile-nav-toggle {
