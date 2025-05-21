@@ -116,6 +116,7 @@ footer span {
   width: auto;
   margin-top: 0.5rem;
   margin-right: 1rem;
+  border-radius: 15px;
 }
 
 .titolo {
@@ -176,14 +177,15 @@ footer span {
 }
 
 .page-switch {
-  margin-top: 2.5rem;
+  margin-top: 0.1rem;
+  margin-bottom: 1.5rem;
   display: flex;
   justify-content: center;
-  gap: 0.7rem;
+  gap: 10px;
 }
 
 .switch-btn {
-  background: #00bcd4;
+  background-color: #444;
   color: #fff;
   padding: 0.4rem 1rem;
   border-radius: 20px;
@@ -197,6 +199,10 @@ footer span {
   gap: 0.4rem;
   min-width: 80px;
   justify-content: center;
+}
+
+.switch-btn:hover {
+  background-color: #666;
 }
 
 .home-btn {
