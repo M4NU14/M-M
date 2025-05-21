@@ -5,11 +5,15 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Privacy & Sicurezza</title>
+
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" href="logo-mm.ico" type="image/x-icon">
+
   <script>
-    /*document.querySelector('.hamburger').addEventListener('click', function () {
-      document.querySelector('.nav-links').classList.toggle('open');
-    });
-    */
     window.addEventListener('DOMContentLoaded', () => {
       document.querySelectorAll('.fade-in').forEach(el => {
         setTimeout(() => {
@@ -18,16 +22,149 @@
       });
     });
   </script>
-  <link rel="stylesheet" href="style.css">
-  <link rel="shortcut icon" href="logo-mm.ico" type="image/x-icon">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html, body {
+      height: 100%;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background-color: #343a40;
+      color: white;
+      padding: 10px 20px;
+      position: relative;
+    }
+
+    .logo {
+      height: 50px;
+    }
+
+    .titolo {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      font-size: 1.5rem;
+      margin: 0;
+      color: white;
+    }
+
+    nav {
+      background-color: #444; /* striscia grigio scuro */
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      padding: 10px 0;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .mobile-nav-toggle {
+      background: none;
+      border: none;
+      font-size: 1.8rem;
+      color: white;
+    }
+
+    .offcanvas {
+      background-color: #f8f9fa;
+    }
+
+    main {
+      flex: 1;
+      padding: 20px;
+    }
+
+    footer {
+      background-color: #343a40;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+    }
+
+    .hero-title {
+      font-size: 1.6rem;
+    }
+
+    .presentiamo-box {
+      margin-top: 20px;
+      font-size: 1rem;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      nav {
+        display: none;
+      }
+
+      .mobile-nav-toggle {
+        display: block;
+      }
+    }
+
+    @media (min-width: 769px) {
+      .mobile-nav-toggle {
+        display: none;
+      }
+
+      nav {
+        display: flex;
+      }
+    }
+  </style>
 </head>
 
 <body>
 
   <header>
+    <!-- Logo a sinistra -->
     <img src="logo-mm.png" alt="Logo" class="logo" title="Manuel & Mattia">
+
+    <!-- Titolo centrato -->
     <h1 class="titolo">Privacy & Sicurezza</h1>
+
+    <!-- Bottone hamburger a destra -->
+    <button class="mobile-nav-toggle" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileMenu" aria-controls="mobileMenu">
+      &#9776;
+    </button>
   </header>
+
+  <!-- Menu mobile -->
+  <div class="offcanvas offcanvas-end" tabindex="-1" id="mobileMenu" aria-labelledby="mobileMenuLabel">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title" id="mobileMenuLabel">Menu</h5>
+      <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Chiudi"></button>
+    </div>
+    <div class="offcanvas-body">
+      <nav class="d-flex flex-column">
+        <a href="pagina1.html" class="nav-link">Sicuri Online</a>
+        <a href="pagina2.html" class="nav-link">Pensiero Digitale</a>
+        <a href="pagina3.html" class="nav-link">Autenticazione</a>
+        <a href="pagina4.html" class="nav-link">Difendi i Dati</a>
+      </nav>
+    </div>
+  </div>
+
+  <!-- Menu desktop -->
   <nav>
     <a href="pagina1.html">Sicuri Online</a>
     <a href="pagina2.html">Pensiero Digitale</a>
@@ -35,28 +172,31 @@
     <a href="pagina4.html">Difendi i Dati</a>
   </nav>
 
-  <section class="hero">
-    <h1 class="hero-title fade-in">
-      <span class="hero-icon">🌐</span>
-      Progetto di Educazione Civica: <span class="highlight">Navigare in Sicurezza</span>
-    </h1>
-    <p class="fade-in presentiamo-box" id="presentiamo">
-      <span class="presentiamo-text">
-        Benvenuti nella pagina del nostro progetto di educazione civica dedicato alla privacy e alla sicurezza online.
-        In un mondo sempre più connesso, è fondamentale conoscere i propri diritti digitali e imparare a proteggere i
-        propri dati personali.<br><br>
-        Attraverso una serie di video brevi e chiari, abbiamo voluto spiegare in modo semplice ma efficace come
-        proteggersi online, riconoscere i rischi più comuni e adottare comportamenti sicuri sul web.<br>
-        Il progetto nasce con l’obiettivo di aumentare la consapevolezza digitale tra i giovani e promuovere una cultura
-        del rispetto e della responsabilità anche in rete.
-      </span>
-    </p>
-  </section>
+  <main>
+    <section class="hero text-center">
+      <h1 class="hero-title fade-in">
+        <span class="hero-icon">🌐</span>
+        Progetto di Educazione Civica: <span class="highlight">Navigare in Sicurezza</span>
+      </h1>
+      <p class="fade-in presentiamo-box" id="presentiamo">
+        <span class="presentiamo-text">
+          Benvenuti nella pagina del nostro progetto di educazione civica dedicato alla privacy e alla sicurezza online.
+          In un mondo sempre più connesso, è fondamentale conoscere i propri diritti digitali e imparare a proteggere i
+          propri dati personali.<br><br>
+          Attraverso una serie di video brevi e chiari, abbiamo voluto spiegare in modo semplice ma efficace come
+          proteggersi online, riconoscere i rischi più comuni e adottare comportamenti sicuri sul web.<br>
+          Il progetto nasce con l’obiettivo di aumentare la consapevolezza digitale tra i giovani e promuovere una cultura
+          del rispetto e della responsabilità anche in rete.
+        </span>
+      </p>
+    </section>
+  </main>
+
   <footer>
-    <span style="color:#ffe082;font-weight:600;">Progetto di Educazione Civica</span> — Realizzato da Manuel &
-    Mattia<br>
+    <span style="color:#ffe082;font-weight:600;">Progetto di Educazione Civica</span> — Realizzato da Manuel & Mattia<br>
     &copy; 2025 Tutti i diritti riservati
   </footer>
+
 </body>
 
 </html>

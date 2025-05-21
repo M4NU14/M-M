@@ -3,20 +3,69 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Sicura Online</title>
+  <title>Sicuri Online</title>
   <link rel="shortcut icon" href="logo-mm.ico" type="image/x-icon">
   <link rel="stylesheet" href="style.css">
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+    }
+
+    .page-container {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .content {
+      flex: 1;
+      padding: 1rem;
+    }
+
+    footer {
+      background-color: #1a1a1a;
+      color: white;
+      text-align: center;
+      padding: 10px;
+      font-size: 0.9rem;
+    }
+
+    .page-switch {
+      margin-top: 0.1rem;      /* ancora meno spazio sopra */
+      margin-bottom: 1.5rem;
+      display: flex;
+      justify-content: center; /* centra i bottoni */
+      gap: 10px;               /* spazio tra i bottoni */
+    }
+
+    .switch-btn {
+      padding: 10px 15px;
+      background-color: #444;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      margin: 0;               /* nessun margine laterale */
+    }
+
+    .switch-btn:hover {
+      background-color: #666;
+    }
+  </style>
 </head>
 <body>
 
-  <header>
-    <img src="logo-mm.png" alt="Logo" class="logo" title="Manuel & Mattia">
-    <h1>Sicuri Online</h1>
-  </header>
+  <div class="page-container">
 
-  <div class="content">
+    <header>
+      <img src="logo-mm.png" alt="Logo" class="logo" title="Manuel & Mattia">
+      <h1>Sicuri Online</h1>
+    </header>
+
+   <div class="content">
     <video controls>
-      <source src="Video/Primo_Video_Finito.mp4" type="video/mp4">
+      <source src="video1.mp4" type="video/mp4">
       Il tuo browser non supporta il video.
     </video>
     <br>
@@ -32,5 +81,6 @@
   <footer>
     &copy; 2025 <span>M&amp;M Team</span> — Privacy &amp; Sicurezza. Tutti i diritti riservati.
   </footer>
+
 </body>
 </html>
