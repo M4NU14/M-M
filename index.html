@@ -24,6 +24,79 @@
   </script>
 
   <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html, body {
+      height: 100%;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background-color: #343a40;
+      color: white;
+      padding: 10px 20px;
+      position: relative;
+    }
+
+    .logo {
+      height: 50px;
+    }
+
+    .titolo {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      font-size: 1.5rem;
+      margin: 0;
+      color: white;
+    }
+
+    nav {
+      background-color: #444; /* striscia grigio scuro */
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      padding: 10px 0;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .mobile-nav-toggle {
+      background: none;
+      border: none;
+      font-size: 1.8rem;
+      color: white;
+    }
+
+    .offcanvas {
+      background-color: #f8f9fa;
+    }
+    .hero-title {
+      font-size: 1.6rem;
+    }
+
+    .presentiamo-box {
+      margin-top: 20px;
+      font-size: 1rem;
+    }
+
     /* Responsive */
     @media (max-width: 768px) {
       nav {
