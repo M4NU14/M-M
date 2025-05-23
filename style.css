@@ -100,9 +100,6 @@ footer {
   border-top-right-radius: 18px;
   box-shadow: 0 -2px 12px rgba(0, 188, 212, 0.08);
   margin-top: auto;
-  position: fixed;
-  left: 0;
-  bottom: 0;
   width: 100%;
 }
 
